@@ -1,0 +1,23 @@
+project_name: "Black-Box to Explainable Automata"
+seeds: [42, 123, 2026, 7, 999]
+
+paths:
+  skab_valve1: "data/raw/SKAB/valve1"
+  skab_valve2: "data/raw/SKAB/valve2"
+  batadal_training_2: "data/raw/BATADAL/training_dataset_2.csv"
+  output_dir: "outputs"
+
+preprocessing:
+  pca_components: 1
+  gaussian_noise_std: 0.1
+
+deep_learning:
+  selected_models: ["LSTM", "GRU"]
+  epochs: 15
+  batch_size: 32
+  patience: 3
+
+automata:
+  fixed:
+    window_size: 4
+    alphabet_size: 3

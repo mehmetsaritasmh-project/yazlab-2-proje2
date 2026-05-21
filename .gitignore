@@ -1,0 +1,25 @@
+# Veri Setleri (Büyük CSV dosyaları depoya yüklenmez)
+data/raw/
+data/processed/
+
+# Model Ağırlıkları ve Çıktılar
+outputs/models/
+outputs/explanations/
+outputs/plots/
+outputs/logs/
+
+# Python ve Derleme Dosyaları
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+
+# Test ve Editör Önbellekleri
+.pytest_cache/
+.vscode/
+.idea/
+*.swp
